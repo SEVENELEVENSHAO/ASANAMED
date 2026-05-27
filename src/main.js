@@ -1,5 +1,3 @@
-import './style.css';
-
 document.addEventListener('DOMContentLoaded', () => {
   // Intersection Observer for generic scroll animations
   const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
