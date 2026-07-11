@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="./public/favicon.svg">
+  <link rel="stylesheet" href="./src/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advance Oncology | Asana Med Bridge</title>
+</head>
+<body class="hospital-site oncology-page">
+  <header class="site-header">
+    <div class="header-top container">
+      <a href="index.html" class="site-logo">
+        <img src="./public/asana-med-bridge-logo.png" alt="Asana Med Bridge Logo" />
+      </a>
+      <div class="header-actions">
+        <a href="mailto:hello@asanamedbridge.com" class="header-phone">Consultation Desk</a>
+        <button type="button" class="pill-button" data-inquiry-open>Book Consultation</button>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <div class="container nav-row">
+        <a href="index.html">Home</a>
+        <a href="orthopedics.html">Global Joints</a>
+        <a href="oncology.html" class="active">Advance Oncology</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="photo-hero oncology-hero">
+      <img class="hero-photo" src="./public/doctor_consultation.png" alt="Doctor reviewing a care plan with a patient" />
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <div class="hero-copy animate-in">
+          <span class="section-kicker">Advance Oncology</span>
+          <h1>Oncology access page coming soon.</h1>
+          <p>A dedicated pathway for advanced oncology assessment, second-opinion coordination, treatment planning, and medical travel support is being prepared.</p>
+          <button type="button" class="pill-button pill-button-large" data-inquiry-open>Start an Oncology Inquiry</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container hospital-section proof-section">
+      <div class="section-heading animate-in">
+        <span class="section-kicker">PAGE HOLDER</span>
+        <h2>Built to organize complex oncology questions.</h2>
+        <p>This section will hold the oncology program details, physician review process, diagnostic coordination, and treatment pathway options as they are finalized.</p>
+      </div>
+      <div class="hospital-grid three-col">
+        <article class="hospital-card animate-in">
+          <span class="card-icon"><span class="icon-emoji" aria-hidden="true">📋</span></span>
+          <h3>Assessment Panel</h3>
+          <p>Space for tumor-marker review, imaging coordination, pathology review, and specialist intake.</p>
+        </article>
+        <article class="hospital-card animate-in" style="transition-delay: 0.1s;">
+          <span class="card-icon"><span class="icon-emoji" aria-hidden="true">🩺</span></span>
+          <h3>Second Opinion</h3>
+          <p>Space for remote oncologist review, treatment-plan discussion, and care-pathway comparison.</p>
+        </article>
+        <article class="hospital-card animate-in" style="transition-delay: 0.2s;">
+          <span class="card-icon"><span class="icon-emoji" aria-hidden="true">🌍</span></span>
+          <h3>Travel Coordination</h3>
+          <p>Space for appointment scheduling, translation, medical records, and family travel support.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container hospital-section" id="contact">
+      <div class="consult-panel animate-in">
+        <div>
+          <span class="section-kicker">START WITH RECORDS</span>
+          <h2>Prepare for oncology review.</h2>
+          <p>Share the case basics, current diagnosis, imaging, pathology, or treatment history so the next version of this page can route inquiries cleanly.</p>
+        </div>
+        <button type="button" class="pill-button pill-button-large" data-inquiry-open>Inquire Now</button>
+      </div>
+    </section>
+  </main>
+
+  <aside class="floating-inquiry" data-inquiry-widget>
+    <button type="button" class="floating-inquiry-toggle" data-inquiry-open aria-expanded="false" aria-controls="inquiry-panel">
+      Inquire Now
+    </button>
+    <div class="floating-inquiry-panel" id="inquiry-panel" hidden>
+      <div class="floating-inquiry-head">
+        <div>
+          <span class="section-kicker">ASANA MED BRIDGE</span>
+          <h2>Start your inquiry</h2>
+        </div>
+        <button type="button" class="floating-inquiry-close" data-inquiry-close aria-label="Close inquiry form">×</button>
+      </div>
+      <form class="inquiry-form" data-inquiry-form>
+        <label for="inquiry-name">Name</label>
+        <input id="inquiry-name" name="name" type="text" autocomplete="name" required>
+
+        <label for="inquiry-email">Email</label>
+        <input id="inquiry-email" name="email" type="email" autocomplete="email" required>
+
+        <label for="inquiry-area">Joint procedure area</label>
+        <select id="inquiry-area" name="procedure" required>
+          <option value="">Select an area</option>
+          <option>Hip replacement</option>
+          <option>Knee replacement</option>
+          <option>Shoulder procedure</option>
+          <option>Sports medicine</option>
+          <option>Joint preservation</option>
+          <option>Robotic-assisted surgery</option>
+          <option>Other joint concern</option>
+        </select>
+
+        <button type="submit" class="pill-button">Inquire Now</button>
+      </form>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; 2026 Asana Med Bridge. Healthcare Unlocked.</p>
+      <p>Advance oncology · Specialist review · Medical travel support</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js?v=20260711b"></script>
+</body>
+</html>
